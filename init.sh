@@ -76,5 +76,7 @@ sudo apt install -y code
 echo "Installing Copilot extension for VS Code..."
 code --install-extension GitHub.copilot --force
 
+echo "Installing python tools"
+pip install tensorflow numpy keras django gym --break-system-packages
 # Final steps
 echo "Setup complete. Please restart your terminal or system to apply all changes."
