@@ -77,6 +77,10 @@ echo "Installing Copilot extension for VS Code..."
 code --install-extension GitHub.copilot --force
 
 echo "Installing python tools"
-pip install tensorflow numpy keras whitenoise channels channels-redis django gym --break-system-packages
+sudo pip install django daphne tensorflow numpy keras whitenoise channels channels-redis gym --break-system-packages
+
+echo "setting up ssh"
+ssh-keygen
+
 # Final step
 echo "Setup complete. Please restart your terminal or system to apply all changes."
